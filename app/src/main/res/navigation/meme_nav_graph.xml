@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/meme_nav_graph"
+    app:startDestination="@id/trending_memes">
+
+    <fragment
+        android:id="@+id/trending_memes"
+        android:name="com.droid.memeit.fragment.TrendingFragment"
+        android:label="TrendingFragment" >
+        <action
+            android:id="@+id/action_trendingFragment_to_createMemeFragment"
+            app:destination="@id/createMemeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_trendingFragment_to_savedFragment"
+            app:destination="@id/saved_memes"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/createMemeFragment"
+        android:name="com.droid.memeit.fragment.CreateMemeFragment"
+        android:label="CreateMemeFragment" />
+    <fragment
+        android:id="@+id/saved_memes"
+        android:name="com.droid.memeit.fragment.SavedFragment"
+        android:label="SavedFragment" >
+        <action
+            android:id="@+id/action_savedFragment_to_createMemeFragment"
+            app:destination="@id/createMemeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_savedFragment_to_trendingFragment"
+            app:destination="@id/trending_memes"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
