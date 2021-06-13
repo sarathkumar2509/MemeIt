@@ -1,5 +1,6 @@
 package com.droid.memeit.main
 
+import com.droid.memeit.model.Meme
 import com.droid.memeit.model.MemeResponseItem
 import com.droid.memeit.utils.Resource
 
