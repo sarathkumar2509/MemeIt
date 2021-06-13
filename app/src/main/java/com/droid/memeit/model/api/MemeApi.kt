@@ -1,7 +1,7 @@
 package com.droid.memeit.model.api
 
+import com.droid.memeit.model.Meme
 import com.droid.memeit.model.MemeResponseItem
-import com.droid.memeit.utils.Resource
 import retrofit2.Response
 import retrofit2.http.GET
 
@@ -10,6 +10,6 @@ import retrofit2.http.GET
  */
 interface MemeApi {
 
-    @GET("5")
+    @GET("16")
     suspend fun getLatestMemes() : Response<MemeResponseItem>
 }

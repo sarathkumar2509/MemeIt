@@ -1,6 +1,7 @@
 package com.droid.memeit.main
 
 import android.util.Log
+import com.droid.memeit.model.Meme
 import com.droid.memeit.model.MemeResponseItem
 import com.droid.memeit.model.api.MemeApi
 import com.droid.memeit.utils.Resource
